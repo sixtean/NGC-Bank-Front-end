@@ -1,0 +1,38 @@
+:root{
+    --cor-padrao: rgb(148, 1, 148);
+    --light-theme-padrao: rgb(173, 2, 173);
+
+    --fundo-escuro: rgba(0, 0, 0, 0.815);
+    --sombra: rgb(68, 68, 68);
+    --li-off: rgba(255, 255, 255, 0.623);
+    --fundo-itens-dark: rgba(214, 214, 214, 0.247);
+
+
+    --fundo-claro: rgb(235, 240, 240);
+    --cor-clara: white;
+    --light-theme-shadow: rgba(0, 0, 0, 0.185);
+    --letras-light-theme: black;
+    --fundo-itens-light: rgba(0, 0, 0, 0.164);
+}
+
+/*THEME DARK */
+.container-home {
+    display: flex;
+    height: 100vh;
+    background-color: var(--fundo-escuro);
+    transition: .2s ease;
+}
+
+.screen-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* THEME LIGHT*/
+
+.container-home.light {
+    background-color: var(--fundo-claro);
+}
+
+
