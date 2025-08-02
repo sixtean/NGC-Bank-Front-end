@@ -1,18 +1,37 @@
 :root{
-    --cor-padrao: rgb(148, 1, 148);
-    --light-theme-padrao: rgb(173, 2, 173);
-
     --fundo-escuro: rgba(0, 0, 0, 0.815);
-    --sombra: rgb(68, 68, 68);
-    --li-off: rgba(255, 255, 255, 0.623);
-    --fundo-itens-dark: rgba(214, 214, 214, 0.247);
-
-
     --fundo-claro: rgb(235, 240, 240);
-    --cor-clara: white;
-    --light-theme-shadow: rgba(0, 0, 0, 0.185);
-    --letras-light-theme: black;
-    --fundo-itens-light: rgba(0, 0, 0, 0.164);
+    --fundo-divs-dark: #353535;
+}
+
+.avisoVerify {
+    background-color: var(--fundo-divs-dark);
+    height: 20%;
+    width: 30%;
+    color: red;
+    padding: 16px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000000000000000000000000000000000;
+}
+
+.container-home > .containerAviso.noVerify{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(65, 65, 65, 0.301);
+    z-index: 11111111111111111111111111111111;
 }
 
 /*THEME DARK */
@@ -29,10 +48,9 @@
     flex-direction: column;
 }
 
+
 /* THEME LIGHT*/
 
 .container-home.light {
     background-color: var(--fundo-claro);
 }
-
-

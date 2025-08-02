@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+    --shadow: #0e0e0e;
+    --lyrics: #fff;
+    --main-color: rgb(148, 1, 148);
+    --teste: #ffffffb6;
+}
+
+.container {
+    display: flex;
+    background-image: url('../../assets/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    width: 100vw;  
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > .element {
+    height: 80%;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 3px 7px 13px var(--shadow);
+    display: flex;
+
+}
+
+.container > .element > .message {
+    color: var(--lyrics);
+    height: 100%;
+    width: 55%;
+    padding: 2rem;
+}
+
+.container > .element > .message > h1 {
+    font-size: 55px;
+    margin-top: 20%;
+    margin-left: 4%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container > .element > .message > h1 > span {
+    color: var(--main-color);
+}
+
+.container > .element > .message > .bar {
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 20%;
+    height: .2%;
+    background-color: var(--lyrics);
+}
+
+.container > .element > .message > p {
+    font-size: 18px;
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 6%;
+}
+
+.container > .element > .forms {
+    width: 45%;
+    height: 100%;
+}

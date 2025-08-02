@@ -1,0 +1,54 @@
+:root {
+    --cor-padrao: rgb(148, 1, 148);
+    --light-theme-padrao: rgb(173, 2, 173);
+}
+
+.verificar-container {
+    min-height: 100vh;
+    background-image: url('../../assets/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verificar-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    border: 2px solid var(--cor-padrao);
+}
+
+.verificar-box h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.codigo-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.codigo-inputs input {
+    width: 50px;
+    height: 60px;
+    font-size: 2rem;
+    text-align: center;
+    border: 2px solid var(--cor-padrao);
+    border-radius: 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.codigo-inputs input:focus {
+    border-color: #e53935;
+    box-shadow: 0 0 5px rgba(229, 57, 53, 0.5);
+}

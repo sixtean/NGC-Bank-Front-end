@@ -1,0 +1,91 @@
+:root{
+    --cor-padrao: rgb(148, 1, 148);
+    --light-theme-padrao: rgb(173, 2, 173);
+
+    --fundo-escuro: rgba(0, 0, 0, 0.815);
+    --sombra: rgb(68, 68, 68);
+    --li-off: rgba(255, 255, 255, 0.623);
+    --fundo-itens-dark: rgba(214, 214, 214, 0.247);
+    --fundo-divs-dark: #353535;
+
+
+    --fundo-claro: rgb(235, 240, 240);
+    --cor-clara: white;
+    --light-theme-shadow: rgba(0, 0, 0, 0.185);
+    --letras-light-theme: black;
+    --fundo-itens-light: rgba(0, 0, 0, 0.164);
+}
+
+.configTopo {
+    height: 8%;
+    padding: 2rem;
+    display: flex;
+}
+
+.configTopo > i {
+    font-size: 35px;
+    margin-left: 4%;
+    color: var(--cor-clara)
+}
+
+.configTopo > h1 {
+    color: var(--cor-padrao);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    margin-left: 2%;
+}
+
+.component-config {
+    height: 100%;
+    width: 96%;
+    margin-left: 4%;
+    padding: 2rem;
+}
+
+.itens-config {
+    background-color: var(--fundo-divs-dark);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px var(--sombra);
+    padding: 1rem;
+    list-style: none;
+}
+
+.itens-config > li {
+    height: 15%;
+}
+
+.itens-config > li > a {
+    display: flex;
+    box-shadow: 1px 4px 20px var(--sombra);
+    background-color: rgba(37, 37, 37, 0.822);
+    height: 75%;
+    align-items: center;
+    padding: 0rem 1rem;
+    border-radius: 15px;
+}
+
+.itens-config > li > a > i {
+    font-size: 35px;
+    color: var(--cor-clara);
+    margin-left: 2%;
+}
+
+.itens-config > li > a > h4 {
+    color: var(--cor-clara);
+    margin-left: 3%;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Light Theme */
+
+.container-home.light > .screen-container > .configTopo > i {
+    color: var(--letras-light-theme);
+}
+
+.container-home.light > .screen-container > .component-config > .itens-config {
+    background-color: var(--fundo-itens-light);
+    box-shadow: 2px 5px 10px var(--light-theme-shadow);
+}
